@@ -20,7 +20,7 @@ set number
 set autoindent
 set smarttab
 
-set backspace=eol,stat,indent
+set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 set nobackup
