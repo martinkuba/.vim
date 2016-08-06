@@ -27,6 +27,10 @@ set nobackup
 set nowb
 set noswapfile
 
+" ignore case when searching
+set ignorecase
+set smartcase
+
 " highlight search results
 set hlsearch
 
