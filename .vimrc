@@ -19,9 +19,6 @@ set cursorline
 set number
 
 
-
-
-
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
@@ -64,6 +61,8 @@ vmap <F2> :w !pbcopy<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set hidden
+
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
@@ -183,10 +182,10 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " Enable syntax highlighting
 syntax enable 
 
-"try
-    "colorscheme desert
-"catch
-"endtry
+try
+    colorscheme peaksea 
+catch
+endtry
 
 set background=dark
 
@@ -235,3 +234,5 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+nmap <F8> :TagbarToggle<CR>
